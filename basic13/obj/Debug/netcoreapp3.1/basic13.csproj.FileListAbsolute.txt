@@ -1,0 +1,12 @@
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/bin/Debug/netcoreapp3.1/basic13.deps.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/bin/Debug/netcoreapp3.1/basic13.runtimeconfig.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/bin/Debug/netcoreapp3.1/basic13.runtimeconfig.dev.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/bin/Debug/netcoreapp3.1/basic13.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/bin/Debug/netcoreapp3.1/basic13.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/obj/Debug/netcoreapp3.1/basic13.csprojAssemblyReference.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/obj/Debug/netcoreapp3.1/basic13.AssemblyInfoInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/obj/Debug/netcoreapp3.1/basic13.AssemblyInfo.cs
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/obj/Debug/netcoreapp3.1/basic13.csproj.CoreCompileInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/obj/Debug/netcoreapp3.1/basic13.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/obj/Debug/netcoreapp3.1/basic13.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/basic13/obj/Debug/netcoreapp3.1/basic13.genruntimeconfig.cache
