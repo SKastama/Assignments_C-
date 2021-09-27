@@ -1,0 +1,12 @@
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/bin/Debug/netcoreapp3.1/fundamentals1.deps.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/bin/Debug/netcoreapp3.1/fundamentals1.runtimeconfig.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/bin/Debug/netcoreapp3.1/fundamentals1.runtimeconfig.dev.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/bin/Debug/netcoreapp3.1/fundamentals1.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/bin/Debug/netcoreapp3.1/fundamentals1.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/obj/Debug/netcoreapp3.1/fundamentals1.csprojAssemblyReference.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/obj/Debug/netcoreapp3.1/fundamentals1.AssemblyInfoInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/obj/Debug/netcoreapp3.1/fundamentals1.AssemblyInfo.cs
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/obj/Debug/netcoreapp3.1/fundamentals1.csproj.CoreCompileInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/obj/Debug/netcoreapp3.1/fundamentals1.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/obj/Debug/netcoreapp3.1/fundamentals1.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/fundamentals1/obj/Debug/netcoreapp3.1/fundamentals1.genruntimeconfig.cache

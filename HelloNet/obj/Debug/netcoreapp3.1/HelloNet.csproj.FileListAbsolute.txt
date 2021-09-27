@@ -1,0 +1,12 @@
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/bin/Debug/netcoreapp3.1/HelloNet.deps.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/bin/Debug/netcoreapp3.1/HelloNet.runtimeconfig.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/bin/Debug/netcoreapp3.1/HelloNet.runtimeconfig.dev.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/bin/Debug/netcoreapp3.1/HelloNet.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/bin/Debug/netcoreapp3.1/HelloNet.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/obj/Debug/netcoreapp3.1/HelloNet.csprojAssemblyReference.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/obj/Debug/netcoreapp3.1/HelloNet.AssemblyInfoInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/obj/Debug/netcoreapp3.1/HelloNet.AssemblyInfo.cs
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/obj/Debug/netcoreapp3.1/HelloNet.csproj.CoreCompileInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/obj/Debug/netcoreapp3.1/HelloNet.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/obj/Debug/netcoreapp3.1/HelloNet.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/HelloNet/obj/Debug/netcoreapp3.1/HelloNet.genruntimeconfig.cache
