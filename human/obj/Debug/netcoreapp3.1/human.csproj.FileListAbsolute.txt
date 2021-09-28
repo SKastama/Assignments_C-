@@ -1,0 +1,12 @@
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/bin/Debug/netcoreapp3.1/human.deps.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.dev.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/bin/Debug/netcoreapp3.1/human.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/bin/Debug/netcoreapp3.1/human.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/obj/Debug/netcoreapp3.1/human.csprojAssemblyReference.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/obj/Debug/netcoreapp3.1/human.AssemblyInfoInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/obj/Debug/netcoreapp3.1/human.AssemblyInfo.cs
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/obj/Debug/netcoreapp3.1/human.csproj.CoreCompileInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/obj/Debug/netcoreapp3.1/human.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/obj/Debug/netcoreapp3.1/human.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/human/obj/Debug/netcoreapp3.1/human.genruntimeconfig.cache
