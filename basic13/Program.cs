@@ -83,16 +83,16 @@ namespace basic13
             return oddArr;
         }
 
-        public static int GreaterThanY(int[] numbers, int y)
-        {
-            int count = 0;
-            for (int i=0; i < numbers.Length; i++) {
-                if (numbers[i] > y) {
+        // public static int GreaterThanY(int[] numbers, int y)
+        // {
+        //     int count = 0;
+        //     for (int i=0; i < numbers.Length; i++) {
+        //         if (numbers[i] > y) {
                     
-                }
-            }
+        //         }
+        //     }
 
-        }
+        // }
 
 
 
