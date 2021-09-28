@@ -29,9 +29,9 @@ namespace human
         }
 
         // Add a constructor that takes a value to set Name, and set the remaining fields to default values
-        public Human(string humanName)
+        public Human(string name)
         {
-            Name = humanName;
+            Name = name;
             Strength = 3;
             Intelligence = 3;
             Dexterity = 3;
@@ -39,11 +39,11 @@ namespace human
         }
 
         // Add a constructor to assign custom values to all fields
-        public Human(string humanName, int str, int intl, int dex, int hp)
+        public Human(string name, int str, int intel, int dex, int hp)
         {
-            Name = humanName;
+            Name = name;
             Strength = str;
-            Intelligence = intl;
+            Intelligence = intel;
             Dexterity = dex;
             health = hp;
         }
@@ -54,6 +54,7 @@ namespace human
         {
             int damage = Strength * 5;
             target.health -= damage;
+            Console.WriteLine($"{Name} attacked {target.Name} for {damage} damage!");
             return target.health;
         }
     }
