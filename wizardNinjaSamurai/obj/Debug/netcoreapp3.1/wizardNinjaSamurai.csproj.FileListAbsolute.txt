@@ -1,0 +1,12 @@
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/obj/Debug/netcoreapp3.1/wizardNinjaSamurai.csprojAssemblyReference.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/obj/Debug/netcoreapp3.1/wizardNinjaSamurai.AssemblyInfoInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/obj/Debug/netcoreapp3.1/wizardNinjaSamurai.AssemblyInfo.cs
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/obj/Debug/netcoreapp3.1/wizardNinjaSamurai.csproj.CoreCompileInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/bin/Debug/netcoreapp3.1/wizardNinjaSamurai.deps.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/bin/Debug/netcoreapp3.1/wizardNinjaSamurai.runtimeconfig.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/bin/Debug/netcoreapp3.1/wizardNinjaSamurai.runtimeconfig.dev.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/bin/Debug/netcoreapp3.1/wizardNinjaSamurai.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/bin/Debug/netcoreapp3.1/wizardNinjaSamurai.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/obj/Debug/netcoreapp3.1/wizardNinjaSamurai.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/obj/Debug/netcoreapp3.1/wizardNinjaSamurai.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/wizardNinjaSamurai/obj/Debug/netcoreapp3.1/wizardNinjaSamurai.genruntimeconfig.cache
