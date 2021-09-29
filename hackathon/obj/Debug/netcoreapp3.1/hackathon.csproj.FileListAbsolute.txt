@@ -1,0 +1,12 @@
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/bin/Debug/netcoreapp3.1/hackathon.deps.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/bin/Debug/netcoreapp3.1/hackathon.runtimeconfig.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/bin/Debug/netcoreapp3.1/hackathon.runtimeconfig.dev.json
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/bin/Debug/netcoreapp3.1/hackathon.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/bin/Debug/netcoreapp3.1/hackathon.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/obj/Debug/netcoreapp3.1/hackathon.csprojAssemblyReference.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/obj/Debug/netcoreapp3.1/hackathon.AssemblyInfoInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/obj/Debug/netcoreapp3.1/hackathon.AssemblyInfo.cs
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/obj/Debug/netcoreapp3.1/hackathon.csproj.CoreCompileInputs.cache
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/obj/Debug/netcoreapp3.1/hackathon.dll
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/obj/Debug/netcoreapp3.1/hackathon.pdb
+/Users/sarahkastama/Documents/C#/Assignments_C#/hackathon/obj/Debug/netcoreapp3.1/hackathon.genruntimeconfig.cache
