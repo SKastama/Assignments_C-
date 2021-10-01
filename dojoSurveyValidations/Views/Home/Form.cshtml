@@ -1,0 +1,36 @@
+@using dojoSurveyValidations.Models
+@model User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey with Validations</title>
+</head>
+<body>
+    <form asp-action="Submitted" asp-controller="Home" method="post">
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input asp-for="Name">    
+        <span asp-validation-for="Location"></span>
+        <label asp-for="Location"></label>
+        <select asp-for="Location">
+            <option value="Seattle">Seattle</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Los Angeles">Los Angeles</option>
+        </select>
+        <span asp-validation-for="Language"></span>
+        <label asp-for="Language"></label>
+        <select asp-for="Language">
+            <option value="C#">C#</option>
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+        </select>
+        <span asp-validation-for="Comments"></span>
+        <label asp-for="Comments"></label>
+        <input asp-for="Comments">
+        <input value="Submit" type="submit">    
+    </form>
+</body>
+</html>
