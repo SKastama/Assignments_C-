@@ -10,7 +10,6 @@ namespace randomPassword.Controllers
         [HttpGet("")]   
         public ViewResult Index()
         {
-            // HttpContext.Session.SetInt32("Count", (int)password.count);
             ViewBag.Count = HttpContext.Session.GetInt32("Count");
             ViewBag.Password = HttpContext.Session.GetString("Password");
             return View();
