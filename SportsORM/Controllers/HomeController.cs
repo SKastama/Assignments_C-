@@ -64,7 +64,7 @@ namespace SportsORM.Controllers
                 .ToList();
 
             ViewBag.TTeams = _context.Teams
-                .Where(l => l.TeamName.Contains("T"))
+                .Where(l => l.TeamName.StartsWith("T"))
                 .ToList();
 
             ViewBag.AlphabeticalTeams = _context.Teams
