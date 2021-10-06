@@ -1,0 +1,51 @@
+@{
+    @using CRUDelicious.Models
+    @model User;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDelicious</title>
+</head>
+<body>
+    <h1>Edit </h1>
+    <a href="/">Home</a>
+    <form asp-action="Edited" asp-controller="Home" method="post">
+        <div>
+            <span asp-validation-for="chefName"></span>
+            <label asp-for="chefName"></label>
+            <input asp-for="chefName">    
+        </div>
+        <div>
+            <span asp-validation-for="dishName"></span>
+            <label asp-for="dishName"></label>
+            <input asp-for="dishName">   
+        </div>
+        <div>
+            <span asp-validation-for="Calories"></span>
+            <label asp-for="Calories"></label>
+            <input asp-for="Calories">   
+        </div>
+        <div>
+            <span asp-validation-for="Taste"></span>
+            <label asp-for="Taste"></label>
+            <select asp-for="Taste">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <span asp-validation-for="Description"></span>
+            <label asp-for="Description"></label>
+            <input asp-for="Description">
+        </div>
+        <input value="Edit Dish" type="submit">    
+    </form>
+</body>
+</html>
