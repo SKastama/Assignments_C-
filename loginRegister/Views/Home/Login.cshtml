@@ -1,0 +1,30 @@
+@{
+    @using loginRegister.Models
+    @model LoginUser;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+</head>
+<body>
+    <h1>Login to this Cool Site!</h1>
+    <a href="/">Register</a>
+    <form asp-action="LoginSubmit" asp-controller="Home" method="post">
+        <div>
+            <span asp-validation-for="Email"></span>
+            <label asp-for="Email"></label>
+            <input asp-for="Email">   
+        </div>
+        <div>
+            <span asp-validation-for="Password"></span>
+            <label asp-for="Password"></label>
+            <input asp-for="Password">   
+        </div>
+        <input value="Login Now" type="submit">    
+    </form>
+</body>
+</html>
