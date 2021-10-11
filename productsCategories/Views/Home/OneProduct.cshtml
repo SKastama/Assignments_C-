@@ -1,0 +1,37 @@
+@{
+    @using productsCategories.Models
+    @model Association;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products and Categories</title>
+</head>
+<body>
+    <h1><a href="/">Products</a> | <a href="/categories">Categories</a></h1>
+    <div>
+        <h2>Categories: </h2>
+        @foreach(Association asso in ViewBag.inProduct.Associations)
+        {
+            <p>@asso.Category.CategoryName</p>
+        }
+    </div>
+    <div>
+        <form asp-action="SubmitAddCategory" asp-controller="Home" method="post">
+            <span asp-validation-for="CategoryId"></span>
+            <label>Category</label>
+            <select asp-for="CategoryId">
+                @foreach(Category cat in ViewBag.notInProduct)
+                {
+                    <option value="@cat.CategoryId">@cat.CategoryName</option>
+                }
+            </select>
+            <input type="hidden" value="@ViewBag.productId"/>
+            <input value="Create" type="submit">  
+        </form>
+    </div>
+</body>
+</html>
