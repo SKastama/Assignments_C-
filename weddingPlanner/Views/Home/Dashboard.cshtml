@@ -1,0 +1,48 @@
+@{
+    @using weddingPlanner.Models
+    @model Wedding;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+</head>
+<body>
+    <h1>Welcome to Wedding Planner</h1>
+    <a href="/logout">Log out</a>
+    <table>
+        <tr>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guest</th>
+            <th>Action</th>
+        </tr>
+        @foreach(Wedding wed in ViewBag.allWeddings)
+        {
+            <tr>
+                <td><a href="@wed.WeddingId">@wed.WedderOne & @wed.WedderTwo</a></td>
+                @{
+                    var formatDate = wed.Date.ToString("MMMM dd, yyyy");
+                }
+                <td>@formatDate</td>
+                <td>@wed.Reservations.Count</td>
+                @{
+                    if (wed.UserId == (int)ViewBag.UserLoggedIn) 
+                    {
+                        <td><button href="rsvp/@wed.WeddingId">RSVP</button> | <a href="delete">Delete</a></td>
+                    }
+                    else 
+                    {
+                        <td>RSVP</td>
+                    }
+                }
+            </tr>
+        }
+    </table>
+    <br/>
+    <a href="/plan/wedding">New Wedding</a>
+</body>
+</html>
