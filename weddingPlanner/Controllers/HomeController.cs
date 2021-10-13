@@ -33,7 +33,7 @@ namespace weddingPlanner.Controllers
                 if(_context.Users.Any(u => u.Email == user.Email))
                 {
                     ModelState.AddModelError("Email", "Email already in use!");
-                    return View("LoginReg", user);
+                    return View("LoginReg");
                 }
                 PasswordHasher<User> Hasher = new PasswordHasher<User>();
                 user.Password = Hasher.HashPassword(user, user.Password);
@@ -41,7 +41,7 @@ namespace weddingPlanner.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("LoginReg");
             }
-            return View("LoginReg", user);
+            return View("LoginReg");
         }
 
         [HttpPost("login/submit")]   
@@ -49,23 +49,23 @@ namespace weddingPlanner.Controllers
         {
             if(ModelState.IsValid)
             {
-                var userInDb = _context.Users.FirstOrDefault(u => u.Email == userSubmission.Email);
+                var userInDb = _context.Users.FirstOrDefault(u => u.Email == userSubmission.LoginEmail);
                 if(userInDb == null)
                 {
-                    ModelState.AddModelError("Email", "Invalid Email/Password");
-                    return View("LoginReg", userSubmission);
+                    ModelState.AddModelError("LoginEmail", "Invalid Email/Password");
+                    return View("LoginReg");
                 }
                 var hasher = new PasswordHasher<LoginUser>();
-                var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.Password);
+                var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.LoginPassword);
                 if(result == 0)
                 {
-                    ModelState.AddModelError("Password", "Password Hashing Failure");
-                    return View("LoginReg", userSubmission);
+                    ModelState.AddModelError("LoginPassword", "Password Hashing Failure");
+                    return View("LoginReg");
                 }
                 HttpContext.Session.SetInt32("UserInSession", userInDb.UserId);
                 return RedirectToAction("Dashboard");
             }
-            return View("LoginReg", userSubmission);
+            return View("LoginReg");
         }
 
 
@@ -78,17 +78,15 @@ namespace weddingPlanner.Controllers
                 return RedirectToAction("LoginReg");
             }
 
-            ViewBag.allWeddings = _context.Weddings
+            List<Wedding> allWeddings = _context.Weddings
                 .Include(wed => wed.Creator)
                 .Include(wed => wed.Reservations)
                     .ThenInclude(rsvp => rsvp.User)
                 .ToList();
 
-            
-
             ViewBag.UserLoggedIn = HttpContext.Session.GetInt32("UserInSession");
 
-            return View();
+            return View(allWeddings);
         }
 
         [HttpGet("rsvp/{WeddingId}")]   
@@ -101,6 +99,27 @@ namespace weddingPlanner.Controllers
             _context.SaveChanges();
             return RedirectToAction("Dashboard");
         }
+
+        [HttpGet("unrsvp/{ReservationId}")]   
+        public IActionResult unRSVP(int ReservationId)
+        {
+            Reservation RetrievedRSVP = _context.Reservations
+                .SingleOrDefault(res => res.ReservationId == ReservationId);
+            _context.Reservations.Remove(RetrievedRSVP);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+
+        [HttpGet("delete/{WeddingId}")]   
+        public IActionResult Delete(int WeddingId)
+        {
+            Wedding RetrievedWedding = _context.Weddings
+                .SingleOrDefault(wed => wed.WeddingId == WeddingId);
+            _context.Weddings.Remove(RetrievedWedding);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+
 
         // Routes: Plan Wedding
         [HttpGet("plan/wedding")]   
@@ -127,7 +146,18 @@ namespace weddingPlanner.Controllers
             return View("PlanWedding", newWedding);
         }
 
+        // Routes: One Wedding
+        [HttpGet("wedding/{WeddingId}")]   
+        public IActionResult ViewOne(int WeddingId)
+        {
+            Wedding oneWedding = _context.Weddings
+                .Include(wed => wed.Creator)
+                .Include(wed => wed.Reservations)
+                    .ThenInclude(rsvp => rsvp.User)
+                .SingleOrDefault(wed => wed.WeddingId == WeddingId);
 
+            return View(oneWedding);
+        }
 
         // Routes: Logout
         [HttpGet("logout")]   

@@ -1,6 +1,6 @@
 @{
     @using weddingPlanner.Models
-    @model Wedding;
+    @model List<Wedding>;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +20,10 @@
             <th>Guest</th>
             <th>Action</th>
         </tr>
-        @foreach(Wedding wed in ViewBag.allWeddings)
+        @foreach(Wedding wed in Model)
         {
             <tr>
-                <td><a href="@wed.WeddingId">@wed.WedderOne & @wed.WedderTwo</a></td>
+                <td><a href="wedding/@wed.WeddingId">@wed.WedderOne & @wed.WedderTwo</a></td>
                 @{
                     var formatDate = wed.Date.ToString("MMMM dd, yyyy");
                 }
@@ -32,11 +32,25 @@
                 @{
                     if (wed.UserId == (int)ViewBag.UserLoggedIn) 
                     {
-                        <td><button href="rsvp/@wed.WeddingId">RSVP</button> | <a href="delete">Delete</a></td>
+                        <td><a href="delete/@wed.WeddingId">Delete</a></td>
                     }
                     else 
                     {
-                        <td>RSVP</td>
+                        if (wed.Reservations.Count == 0)
+                        {
+                            <td><a href="rsvp/@wed.WeddingId">RSVP</a></td>
+                        }
+                        foreach (Reservation res in wed.Reservations)
+                        {
+                            if (res.UserId == (int)ViewBag.UserLoggedIn)
+                            {
+                                <td><a href="unrsvp/@res.ReservationId">Un-RSVP</a></td>
+                            }
+                            else 
+                            {
+                                <td><a href="rsvp/@wed.WeddingId">RSVP</a></td>
+                            }
+                        }
                     }
                 }
             </tr>

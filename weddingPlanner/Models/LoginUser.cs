@@ -8,12 +8,12 @@ namespace weddingPlanner.Models
     public class LoginUser
     {
         [Required]
-        [Display(Name = "Email ")] 
-        public string Email {get; set;}
+        [Display(Name = "LoginEmail ")] 
+        public string LoginEmail {get; set;}
         
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password ")] 
-        public string Password { get; set; }
+        [Display(Name = "LoginPassword ")] 
+        public string LoginPassword { get; set; }
     }
 }

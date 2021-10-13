@@ -5,14 +5,14 @@
 <h1>Login</h1>
 <form asp-action="LoginSubmit" asp-controller="Home" method="post">
     <div>
-        <span asp-validation-for="Email"></span>
-        <label asp-for="Email"></label>
-        <input asp-for="Email">   
+        <span asp-validation-for="LoginEmail"></span>
+        <label>Email</label>
+        <input asp-for="LoginEmail">   
     </div>
     <div>
-        <span asp-validation-for="Password"></span>
-        <label asp-for="Password"></label>
-        <input asp-for="Password">   
+        <span asp-validation-for="LoginPassword"></span>
+        <label>Password</label>
+        <input asp-for="LoginPassword">   
     </div>
     <input value="Log in" type="submit">    
 </form>

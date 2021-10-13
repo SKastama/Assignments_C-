@@ -9,7 +9,7 @@ using weddingPlanner.Models;
 namespace weddingPlanner.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20211012221625_DataMigration")]
+    [Migration("20211013200722_DataMigration")]
     partial class DataMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
