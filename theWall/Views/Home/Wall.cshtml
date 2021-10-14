@@ -1,0 +1,51 @@
+@{
+    @using theWall.Models
+    @model Comment;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <a href="/logout">Log out</a>
+    <partial name="MessagePartial"/>
+    <hr/>
+    <div>
+    @foreach(Message message in ViewBag.allMessages)
+    {
+        <p>
+            @{
+                var formatDate = message.CreatedAt.ToString("MMMM dd, yyyy");
+            }
+            @message.Creator.FirstName @message.Creator.LastName | @formatDate
+        </p>
+        <p>@message.messageText</p>
+        <h4>&emsp;Comments</h4>
+        @foreach(Comment comment in message.CreatedComments)
+        {
+            <p> &emsp;
+            @{
+                var formatDate2 = comment.CreatedAt.ToString("MMMM dd, yyyy");
+            }
+            @comment.UserCreator.FirstName @comment.UserCreator.LastName | @formatDate2
+        </p>
+        <p>&emsp; @comment.commentText</p>
+        <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _</p>
+        }
+        <form asp-action="CommentSubmit" asp-controller="Home" method="post">
+            <span asp-validation-for="commentText"></span>
+            <label asp-for="commentText"></label>
+            <input asp-for="commentText">   
+            <input asp-for="MessageId" type="hidden" value="@message.MessageId"/>
+            <input value="Comment" type="submit">   
+        </form>
+        <hr/>
+    }
+</div>
+</body>
+</html>

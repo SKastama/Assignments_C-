@@ -1,0 +1,16 @@
+@{
+    @using theWall.Models
+    @model List<Message>;
+}
+<div>
+    @foreach(Message message in Model)
+        {
+            <p>
+                @{
+                    var formatDate = message.CreatedAt.ToString("MMMM dd, yyyy");
+                }
+                @message.Creator.FirstName @message.Creator.LastName | @formatDate
+            </p>
+            <p>@message.messageText</p>
+        }
+</div>

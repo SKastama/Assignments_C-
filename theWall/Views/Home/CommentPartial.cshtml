@@ -1,0 +1,12 @@
+@{
+    @using theWall.Models
+    @model Comment;
+}
+<h4>Post a Comment</h4>
+<form asp-action="CommentSubmit" asp-controller="Home" method="post">
+    <span asp-validation-for="commentText"></span>
+    <label asp-for="commentText"></label>
+    <input asp-for="commentText">   
+    <input type="hidden" value="@ViewBag.message.MessageId"/>
+    <input value="Comment" type="submit">   
+</form>

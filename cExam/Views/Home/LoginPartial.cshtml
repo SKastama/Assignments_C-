@@ -1,0 +1,18 @@
+@{
+    @using cExam.Models
+    @model LoginUser;
+}
+<h1>Login</h1>
+<form asp-action="LoginSubmit" asp-controller="Home" method="post">
+    <div>
+        <span asp-validation-for="LoginEmail"></span>
+        <label asp-for="LoginEmail"></label>
+        <input asp-for="LoginEmail">   
+    </div>
+    <div>
+        <span asp-validation-for="LoginPassword"></span>
+        <label asp-for="LoginPassword"></label>
+        <input asp-for="LoginPassword">   
+    </div>
+    <input value="Log in" type="submit">    
+</form>

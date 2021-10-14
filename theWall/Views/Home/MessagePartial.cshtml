@@ -1,0 +1,11 @@
+@{
+    @using theWall.Models
+    @model Message;
+}
+<h4>Post a Message</h4>
+<form asp-action="MessageSubmit" asp-controller="Home" method="post">
+    <span asp-validation-for="messageText"></span>
+    <label asp-for="messageText"></label>
+    <input asp-for="messageText">   
+    <input value="Post" type="submit">   
+</form>
